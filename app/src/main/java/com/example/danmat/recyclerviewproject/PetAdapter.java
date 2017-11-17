@@ -29,7 +29,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(PetViewHolder petViewHolder, int position) {
+    public void onBindViewHolder(final PetViewHolder petViewHolder, int position) {
         final Pet pet = petsList.get(position);
         petViewHolder.cardview_avatar.setImageResource(pet.getAvatar());
         petViewHolder.cardview_name.setText(pet.getName());
@@ -38,8 +38,8 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>{
               @Override
               public void onClick(View v) {
                   Toast.makeText(petMainActivity, pet.getName() + " liked", Toast.LENGTH_SHORT).show();
-                  int rate = pet.getRate();
-                  pet.setRate(rate++);
+                  pet.setRate(pet.getRate()+1);
+                  petViewHolder.cardview_rate_text.setText(Integer.toString(pet.getRate()));
               }
           });
 

@@ -65,5 +65,7 @@ public class MainActivity extends AppCompatActivity {
         petsList.add(new Pet("Gordo", R.drawable.dog_dalmatian_king_icon, 3));
         petsList.add(new Pet("Perro", R.drawable.dog_einstein_icon, 1));
         petsList.add(new Pet("Laika", R.drawable.dog_haski_icon, 4));
+        petsList.add(new Pet("Linda", R.drawable.dog_einstein_icon, 4));
+        petsList.add(new Pet("Doggy", R.drawable.dog_dalmatian_king_icon, 5));
     }
 }

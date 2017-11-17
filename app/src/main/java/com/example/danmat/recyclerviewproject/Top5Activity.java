@@ -33,10 +33,10 @@ public class Top5Activity extends AppCompatActivity {
 
     public void initializePetsList(){
         petsList = new ArrayList<Pet>();
+        petsList.add(new Pet("Doggy", R.drawable.dog_dalmatian_king_icon, 5));
         petsList.add(new Pet("Vato Loco", R.drawable.dog_chihuahua_bone_icon, 5));
         petsList.add(new Pet("Laika", R.drawable.dog_haski_icon, 4));
         petsList.add(new Pet("Mortis", R.drawable.dog_bark_icon, 3));
         petsList.add(new Pet("Gordo", R.drawable.dog_dalmatian_king_icon, 3));
-        petsList.add(new Pet("Perro", R.drawable.dog_einstein_icon, 1));
     }
 }
